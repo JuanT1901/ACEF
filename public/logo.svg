@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="ACEF">
+  <polygon points="22.06,90 100,75 177.94,90 177.94,55 100,10 22.06,55" fill="#FFCC2A"/>
+  <polygon points="22.06,125 100,110 177.94,125 177.94,90 100,75 22.06,90" fill="#44AA44"/>
+  <polygon points="22.06,145 100,190 177.94,145 177.94,125 100,110 22.06,125" fill="#2379C6"/>
+  <polygon points="100,10 177.94,55 177.94,145 100,190 22.06,145 22.06,55" fill="none" stroke="#B7B7B7" stroke-width="4"/>
+</svg>

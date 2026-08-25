@@ -1,0 +1,30 @@
+/*
+ * Tokens de marca ACEF — muestreados de public/logo.jpg.
+ * No cambiar estos valores a ojo. Los "-800/-900/-700" son variantes
+ * oscurecidas verificadas para contraste AA (ver comentarios).
+ * Reglas de uso completas en el plan de diseño del proyecto.
+ */
+:root {
+  /* Colores puros del logo — uso restringido, ver reglas abajo */
+  --acef-amarillo: #ffcc2a; /* 1.51:1 sobre blanco. NUNCA como texto. Solo bloque sólido + texto carbón, o acento sobre fondo oscuro */
+  --acef-verde: #44aa44; /* 2.97:1 sobre blanco. Solo relleno de forma, nunca texto */
+  --acef-azul: #2379c6; /* color estructural, acentos y formas grandes */
+  --acef-carbon: #363435; /* gris del wordmark, texto principal */
+
+  /* Variantes oscurecidas — verificadas para texto y botones sobre blanco */
+  --acef-azul-800: #1a5a94; /* 7.16:1 — texto y CTA primario */
+  --acef-azul-900: #164e80; /* 8.62:1 — encabezados */
+  --acef-verde-700: #337f33; /* 4.97:1 — mínimo usable para texto verde */
+  --acef-verde-800: #2c6e2c; /* 6.22:1 — CTA de WhatsApp */
+
+  /* Neutros del sitio — gris azulado claro, no crema */
+  --acef-fondo: #f5f8fa;
+  --acef-fondo-alterno: #eaf0f5;
+  --acef-borde: #d8e1e8;
+  --acef-texto: #363435;
+  --acef-texto-secundario: #5b5b5c;
+
+  /* Tipografía */
+  --font-titulos: var(--font-manrope), "Manrope", system-ui, sans-serif;
+  --font-cuerpo: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif;
+}

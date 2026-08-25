@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../styles/tokens.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--acef-fondo);
+  color: var(--acef-texto);
+  font-family: var(--font-cuerpo);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-titulos);
+}
+
+/* Foco de teclado visible en toda la interfaz */
+:focus-visible {
+  outline: 3px solid var(--acef-azul-800);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Esquina cortada en ángulo — referencia sutil a las facetas del hexágono del logo */
+.faceta {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 1.75rem 100%, 0 calc(100% - 1.75rem));
+}
