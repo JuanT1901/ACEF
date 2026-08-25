@@ -3,8 +3,6 @@ import { Manrope, Source_Sans_3 } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
-// CSS is processed by Next.js; TypeScript has no module declaration for it.
-// @ts-expect-error Next.js resolves global CSS imports at build time.
 import "./globals.css";
 
 const manrope = Manrope({

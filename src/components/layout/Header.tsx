@@ -26,7 +26,7 @@ export function Header() {
           onClick={() => setMenuAbierto(false)}
         >
           <Image
-            src="/logo1.jpg"
+            src="/logo.svg"
             alt=""
             width={36}
             height={36}

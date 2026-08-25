@@ -35,7 +35,7 @@ export function Hero() {
 
         <div className="hidden justify-center lg:flex">
           <Image
-            src="/logo1.svg"
+            src="/logo.svg"
             alt="Hexágono con los tres galones del logo de ACEF"
             width={260}
             height={260}
