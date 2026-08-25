@@ -15,7 +15,9 @@
       "Bash(git status *)",
       "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 3010,3011 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess\")",
       "Bash(powershell -Command \"Stop-Process -Id 28340,10892 -Force -ErrorAction SilentlyContinue; Start-Sleep -Milliseconds 300; Get-NetTCPConnection -LocalPort 3000,3001,3002,3010,3011 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
