@@ -33,7 +33,7 @@ export function Header() {
             aria-hidden="true"
           />
           <span className="flex flex-col leading-tight">
-            <span className="font-titulos text-xl font-extrabold tracking-tight text-acef-carbon">
+            <span className="font-titulos text-xl font-extrabold tracking-tight text-acef-negro">
               ACEF
             </span>
             <span className="hidden text-[11px] font-medium text-acef-texto-secundario sm:block">

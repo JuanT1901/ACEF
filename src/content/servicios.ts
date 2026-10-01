@@ -4,17 +4,18 @@ export const GRUPOS_SERVICIOS: GrupoServicios[] = [
   {
     slug: "contabilidad",
     nombre: "Contabilidad",
+    tema: "azul",
     resumenCorto: "Libros al día y estados financieros que puede entender y usar.",
     items: [
-      "Contabilidad mensual y llevanza de libros oficiales",
-      "Estados financieros bajo NIIF para Pymes / Grupo 3",
-      "Conciliaciones bancarias y cierre contable anual",
-      "Implementación y manejo de software contable (Siigo, entre otros)",
+      { nombre: "Contabilidad mensual y llevanza de libros oficiales", icono: "libro" },
+      { nombre: "Estados financieros bajo NIIF para Pymes / Grupo 3", icono: "grafico" },
+      { nombre: "Conciliaciones bancarias y cierre contable anual", icono: "banco" },
+      { nombre: "Implementación y manejo de software contable", icono: "computador" },
     ],
     descripcionLarga: [
       "Una empresa que no lleva su contabilidad al día no solo se expone a sanciones: pierde la información que necesita para tomar decisiones. ACEF se encarga de que sus libros oficiales estén completos, actualizados y listos para cualquier requerimiento, mes a mes.",
       "Preparamos sus estados financieros bajo el marco técnico normativo colombiano (NIIF para Pymes o Grupo 3, según el tamaño de su empresa), hacemos las conciliaciones bancarias periódicas y organizamos el cierre contable de cada año fiscal con tiempo, no a última hora.",
-      "Si su empresa usa Siigo u otro software contable, lo ayudamos a implementarlo o a ponerlo al día; si no tiene ninguno, le recomendamos una opción acorde al tamaño de su operación.",
+      "Si su empresa ya usa un software contable, lo ayudamos a implementarlo o a ponerlo al día; si no tiene ninguno, le recomendamos una opción acorde al tamaño de su operación.",
     ],
     metaTitulo: "Contabilidad mensual y estados financieros | ACEF",
     metaDescripcion:
@@ -23,14 +24,15 @@ export const GRUPOS_SERVICIOS: GrupoServicios[] = [
   {
     slug: "impuestos-y-dian",
     nombre: "Impuestos y DIAN",
+    tema: "amarillo",
     resumenCorto: "Declaraciones a tiempo y respaldo si la DIAN lo requiere.",
     items: [
-      "Inscripción y actualización del RUT",
-      "Declaración de IVA, retención en la fuente e ICA",
-      "Renta de personas naturales y jurídicas",
-      "Información exógena (medios magnéticos)",
-      "Facturación electrónica y documento soporte",
-      "Respuesta a requerimientos y trámites ante la DIAN",
+      { nombre: "Inscripción y actualización del RUT", icono: "identificacion" },
+      { nombre: "Declaración de IVA, retención en la fuente e ICA", icono: "porcentaje" },
+      { nombre: "Renta de personas naturales y jurídicas", icono: "calculadora" },
+      { nombre: "Información exógena (medios magnéticos)", icono: "baseDatos" },
+      { nombre: "Facturación electrónica y documento soporte", icono: "factura" },
+      { nombre: "Respuesta a requerimientos y trámites ante la DIAN", icono: "escudo" },
     ],
     descripcionLarga: [
       "El calendario tributario colombiano no perdona los plazos, y las obligaciones cambian según el tipo de contribuyente. ACEF se encarga de identificar qué le corresponde declarar y de presentarlo a tiempo: IVA, retención en la fuente, ICA, y la declaración de renta de personas naturales o jurídicas.",
@@ -44,12 +46,13 @@ export const GRUPOS_SERVICIOS: GrupoServicios[] = [
   {
     slug: "nomina-y-seguridad-social",
     nombre: "Nómina y seguridad social",
+    tema: "verde",
     resumenCorto: "Nómina, prestaciones y seguridad social sin errores que le cuesten después.",
     items: [
-      "Liquidación de nómina, prestaciones sociales y liquidaciones definitivas",
-      "Aportes a seguridad social (PILA)",
-      "Asesoría pensional: historia laboral, semanas cotizadas y requisitos de pensión",
-      "Corrección de inconsistencias ante fondos y EPS",
+      { nombre: "Liquidación de nómina, prestaciones sociales y liquidaciones definitivas", icono: "billetera" },
+      { nombre: "Aportes a seguridad social (PILA)", icono: "salud" },
+      { nombre: "Asesoría pensional: historia laboral, semanas cotizadas y requisitos de pensión", icono: "reloj" },
+      { nombre: "Corrección de inconsistencias ante fondos y EPS", icono: "lupa" },
     ],
     descripcionLarga: [
       "Un error en la liquidación de nómina o en el pago de seguridad social se convierte, con el tiempo, en un problema mucho más grande de resolver. ACEF liquida su nómina, sus prestaciones sociales y las liquidaciones definitivas de sus trabajadores, y presenta los aportes a seguridad social a través de PILA cada mes.",
@@ -62,11 +65,12 @@ export const GRUPOS_SERVICIOS: GrupoServicios[] = [
   {
     slug: "asesoria-empresarial-y-financiera",
     nombre: "Asesoría empresarial y financiera",
+    tema: "negro",
     resumenCorto: "Acompañamiento desde la creación de su empresa hasta su operación diaria.",
     items: [
-      "Creación de empresa y trámites en Cámara de Comercio",
-      "Acompañamiento en pagos de impuestos y calendario tributario",
-      "Asesoría contable y financiera continua",
+      { nombre: "Creación de empresa y trámites en Cámara de Comercio", icono: "edificio" },
+      { nombre: "Acompañamiento en pagos de impuestos y calendario tributario", icono: "calendario" },
+      { nombre: "Asesoría contable y financiera continua", icono: "tendencia" },
     ],
     descripcionLarga: [
       "Si está empezando, lo acompañamos en la creación de su empresa y en los trámites ante la Cámara de Comercio, para que arranque con la estructura correcta desde el primer día.",

@@ -16,18 +16,15 @@ export default function PoliticaDePrivacidad() {
       <ComentarioBorrador />
 
       <p className="mb-2 text-sm font-bold uppercase tracking-wide text-acef-azul800">Legal</p>
-      <h1 className="font-titulos text-3xl font-extrabold text-acef-azul900">
+      <h1 className="font-titulos text-3xl font-extrabold text-acef-negro">
         Política de privacidad del sitio web
       </h1>
-      <p className="mt-2 text-sm text-acef-texto-secundario">
-        Última actualización: {FECHA_ACTUALIZACION_POLITICAS}
-      </p>
 
       <div className="prose-acef mt-8 space-y-6 text-base leading-relaxed text-acef-texto">
         <p>
           Esta política explica cómo funciona el sitio web de ACEF en relación con la información
           de las personas que lo visitan. Para conocer en detalle cómo se tratan los datos
-          personales recolectados a través del formulario de contacto, conforme a la Ley 1581 de
+          personales que usted nos entrega al contactarnos por WhatsApp o correo electrónico, conforme a la Ley 1581 de
           2012 y el Decreto 1074 de 2015, consulte la{" "}
           <Link href="/tratamiento-de-datos" className="font-semibold text-acef-azul800 underline">
             Política de Tratamiento de Datos Personales
@@ -36,7 +33,7 @@ export default function PoliticaDePrivacidad() {
         </p>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             Cookies y herramientas de analítica
           </h2>
           <p className="mt-2">
@@ -49,20 +46,19 @@ export default function PoliticaDePrivacidad() {
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             Qué información recibe el sitio
           </h2>
           <p className="mt-2">
-            La única información que el sitio recolecta de forma directa es la que usted decide
-            entregar voluntariamente a través del formulario de contacto: nombre, empresa
-            (opcional), correo electrónico, teléfono, el servicio de su interés y el mensaje que
-            escriba. Esa información se envía como un correo electrónico a la dirección de
-            contacto de ACEF; el sitio no la almacena en una base de datos propia.
+            El sitio no recolecta datos personales de forma directa: no tiene formularios ni
+            almacena información de quienes lo visitan. Cuando usted decide escribirnos por
+            WhatsApp o por correo electrónico, los datos que comparta en esa conversación se
+            tratan conforme a la Política de Tratamiento de Datos Personales.
           </p>
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">Enlaces externos</h2>
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">Enlaces externos</h2>
           <p className="mt-2">
             El sitio incluye enlaces a WhatsApp y, cuando estén activas, a Instagram y TikTok.
             Estas plataformas tienen sus propias políticas de privacidad, independientes de esta,
@@ -71,13 +67,9 @@ export default function PoliticaDePrivacidad() {
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">Contacto</h2>
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">Contacto</h2>
           <p className="mt-2">
-            Si tiene preguntas sobre esta política, puede escribir a{" "}
-            <a href={`mailto:${EMAIL_CONTACTO}`} className="font-semibold text-acef-azul800 underline">
-              {EMAIL_CONTACTO}
-            </a>{" "}
-            o por{" "}
+            Si tiene preguntas sobre esta política, el canal principal de atención es{" "}
             <a
               href={construirEnlaceWhatsApp()}
               target="_blank"
@@ -86,7 +78,18 @@ export default function PoliticaDePrivacidad() {
             >
               WhatsApp
             </a>
+            . También puede escribir al correo{" "}
+            <a href={`mailto:${EMAIL_CONTACTO}`} className="font-semibold text-acef-azul800 underline">
+              {EMAIL_CONTACTO}
+            </a>
             .
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">Vigencia</h2>
+          <p className="mt-2">
+            Esta política rige desde el {FECHA_ACTUALIZACION_POLITICAS}.
           </p>
         </section>
       </div>

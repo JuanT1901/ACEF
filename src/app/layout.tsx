@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | ACEF",
   },
   description:
-    "ACEF es una firma de asesoría contable en Zipaquirá que lleva su contabilidad, sus impuestos y su nómina al día, con atención directa por WhatsApp para empresas de todo Colombia.",
+    "ACEF es una firma de asesoría contable en Zipaquirá con un equipo interdisciplinario que lleva su contabilidad, sus impuestos y su nómina al día, con atención directa por WhatsApp para empresas de todo Colombia.",
   openGraph: {
     type: "website",
     locale: "es_CO",

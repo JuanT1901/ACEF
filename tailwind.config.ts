@@ -14,6 +14,10 @@ const config: Config = {
           azul800: "var(--acef-azul-800)",
           azul900: "var(--acef-azul-900)",
           carbon: "var(--acef-carbon)",
+          // Fallback literal: estos dos son superficies oscuras con texto blanco
+          // encima. Si el token no cargara, el texto quedaría invisible.
+          negro: "var(--acef-negro, #131313)",
+          negro800: "var(--acef-negro-800, #2b2a2b)",
           fondo: "var(--acef-fondo)",
           "fondo-alterno": "var(--acef-fondo-alterno)",
           borde: "var(--acef-borde)",

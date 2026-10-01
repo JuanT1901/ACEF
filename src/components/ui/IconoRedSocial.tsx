@@ -48,3 +48,11 @@ export function IconoRedSocial({
     </a>
   );
 }
+
+export function LogoWhatsApp({ className = "h-6 w-6" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" className={className}>
+      <Trazo red="whatsapp" />
+    </svg>
+  );
+}

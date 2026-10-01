@@ -33,7 +33,7 @@ export function ComoTrabajamos() {
               >
                 Paso {paso.numero}
               </span>
-              <h3 className="mt-1 font-titulos text-lg font-bold text-acef-azul900">
+              <h3 className="mt-1 font-titulos text-lg font-bold text-acef-negro">
                 {paso.titulo}
               </h3>
               <p className="mt-2 text-sm text-acef-texto-secundario">{paso.descripcion}</p>

@@ -7,10 +7,10 @@ const clasesBase =
   "inline-flex items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed";
 
 const clasesPorVariante: Record<Variante, string> = {
-  primario: "bg-acef-azul800 text-white hover:bg-acef-azul900",
+  primario: "bg-acef-negro text-white hover:bg-acef-negro800",
   whatsapp: "bg-acef-verde800 text-white hover:bg-[#245c24]",
   secundario:
-    "border-2 border-acef-azul800 text-acef-azul800 bg-transparent hover:bg-acef-azul800 hover:text-white",
+    "border-2 border-acef-negro text-acef-negro bg-transparent hover:bg-acef-negro hover:text-white",
 };
 
 type PropsEnlace = {

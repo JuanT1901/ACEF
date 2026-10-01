@@ -12,15 +12,21 @@
   --acef-carbon: #363435; /* gris del wordmark, texto principal */
 
   /* Variantes oscurecidas — verificadas para texto y botones sobre blanco */
-  --acef-azul-800: #1a5a94; /* 7.16:1 — texto y CTA primario */
-  --acef-azul-900: #164e80; /* 8.62:1 — encabezados */
+  --acef-azul-800: #1a5a94; /* 7.16:1 — acento interactivo: enlaces, eyebrows, foco */
+  --acef-azul-900: #164e80; /* 8.62:1 — reservado, ya no se usa como color de titular */
   --acef-verde-700: #337f33; /* 4.97:1 — mínimo usable para texto verde */
   --acef-verde-800: #2c6e2c; /* 6.22:1 — CTA de WhatsApp */
 
-  /* Neutros del sitio — gris azulado claro, no crema */
-  --acef-fondo: #f5f8fa;
-  --acef-fondo-alterno: #eaf0f5;
-  --acef-borde: #d8e1e8;
+  /* Negros estructurales — carbón del wordmark (#363435) profundizado.
+     Sustituyen al azul como oscuro dominante: titulares, superficies oscuras
+     y CTA primario. El azul queda solo como acento interactivo. */
+  --acef-negro: #131313; /* 18.6:1 sobre blanco — titulares y superficies oscuras */
+  --acef-negro-800: #2b2a2b; /* 14.2:1 — estado hover de superficies negras */
+
+  /* Neutros del sitio — gris neutro, sin tinte azul, para que el negro destaque */
+  --acef-fondo: #fafafa;
+  --acef-fondo-alterno: #f1f1f1;
+  --acef-borde: #e0e0e0;
   --acef-texto: #363435;
   --acef-texto-secundario: #5b5b5c;
 

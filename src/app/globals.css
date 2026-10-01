@@ -1,8 +1,11 @@
+/* @import debe ir antes de cualquier otra regla: un @import después de otras
+   reglas es inválido según la especificación CSS y el navegador lo descarta,
+   dejando los tokens sin definir (fondos transparentes, texto invisible). */
+@import "../styles/tokens.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "../styles/tokens.css";
 
 html {
   scroll-behavior: smooth;

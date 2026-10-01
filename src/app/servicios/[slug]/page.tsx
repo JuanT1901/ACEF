@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BotonEnlace } from "@/components/ui/Boton";
+import { Icono } from "@/components/ui/Icono";
+import { CLASES_TEMA } from "@/components/ui/temas";
 import { GRUPOS_SERVICIOS, obtenerGrupoServicio } from "@/content/servicios";
 import { construirEnlaceWhatsApp } from "@/content/contacto";
 
@@ -47,7 +49,7 @@ export default async function PaginaServicio({
           <Link href="/#servicios" className="text-sm font-semibold text-acef-azul800 hover:underline">
             ← Todos los servicios
           </Link>
-          <h1 className="mt-4 font-titulos text-3xl font-extrabold text-acef-azul900 sm:text-4xl">
+          <h1 className="mt-4 font-titulos text-3xl font-extrabold text-acef-negro sm:text-4xl">
             {grupo.nombre}
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-acef-texto-secundario">{grupo.resumenCorto}</p>
@@ -71,14 +73,16 @@ export default async function PaginaServicio({
           </div>
 
           <div className="faceta border border-acef-borde bg-acef-fondo-alterno p-6">
-            <h2 className="font-titulos text-lg font-bold text-acef-azul900">Qué incluye</h2>
-            <ul className="mt-4 space-y-2">
+            <h2 className="font-titulos text-lg font-bold text-acef-negro">Qué incluye</h2>
+            <ul className="mt-4 space-y-3">
               {grupo.items.map((item) => (
-                <li key={item} className="flex gap-2 text-sm text-acef-texto">
-                  <span aria-hidden="true" className="mt-0.5 text-acef-verde700">
-                    ✓
+                <li key={item.nombre} className="flex items-center gap-3 text-sm text-acef-texto">
+                  <span
+                    className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md ${CLASES_TEMA[grupo.tema].caja}`}
+                  >
+                    <Icono nombre={item.icono} className="h-4 w-4" />
                   </span>
-                  <span>{item}</span>
+                  <span>{item.nombre}</span>
                 </li>
               ))}
             </ul>
@@ -88,13 +92,13 @@ export default async function PaginaServicio({
 
       <section className="border-t border-acef-borde bg-acef-fondo-alterno py-14 sm:py-20">
         <div className="mx-auto max-w-contenido px-4 sm:px-6">
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">Otros servicios</h2>
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">Otros servicios</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             {otrosGrupos.map((otro) => (
               <Link
                 key={otro.slug}
                 href={`/servicios/${otro.slug}`}
-                className="rounded-md border border-acef-borde bg-white p-4 text-sm font-semibold text-acef-azul800 hover:border-acef-azul800"
+                className="rounded-md border border-acef-borde bg-white p-4 text-sm font-semibold text-acef-azul800 transition-colors hover:border-acef-negro"
               >
                 {otro.nombre}
               </Link>

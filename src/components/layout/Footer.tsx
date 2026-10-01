@@ -4,7 +4,6 @@ import { IconoRedSocial } from "@/components/ui/IconoRedSocial";
 import {
   CIUDAD,
   COBERTURA,
-  EMAIL_CONTACTO,
   INSTAGRAM_URL,
   TIKTOK_URL,
   WHATSAPP_NUMBER,
@@ -16,7 +15,7 @@ export function Footer() {
   const anio = 2026;
 
   return (
-    <footer className="bg-acef-azul900 text-white">
+    <footer className="bg-acef-negro text-white">
       <div className="mx-auto grid max-w-contenido gap-10 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex items-center gap-2">
@@ -77,9 +76,6 @@ export function Footer() {
               <a href={construirEnlaceWhatsApp()} target="_blank" rel="noopener noreferrer">
                 WhatsApp: +{WHATSAPP_NUMBER}
               </a>
-            </li>
-            <li>
-              <a href={`mailto:${EMAIL_CONTACTO}`}>{EMAIL_CONTACTO}</a>
             </li>
           </ul>
           <div className="mt-4 flex items-center gap-4">

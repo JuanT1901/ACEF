@@ -24,12 +24,13 @@ export function Seccion({
     >
       <div className="mx-auto max-w-contenido px-4 sm:px-6">
         <header className="max-w-2xl">
+          <span aria-hidden="true" className="mb-4 block h-1 w-12 bg-acef-amarillo" />
           {eyebrow && (
             <p className="mb-2 text-sm font-bold uppercase tracking-wide text-acef-azul800">
               {eyebrow}
             </p>
           )}
-          <h2 className="font-titulos text-3xl font-extrabold text-acef-azul900 sm:text-4xl">
+          <h2 className="font-titulos text-3xl font-extrabold text-acef-negro sm:text-4xl">
             {titulo}
           </h2>
           {descripcion && (

@@ -25,7 +25,7 @@ export function Faq() {
       <div className="divide-y divide-acef-borde border-y border-acef-borde">
         {PREGUNTAS_FRECUENTES.map((item) => (
           <details key={item.pregunta} className="group py-4">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-titulos text-base font-bold text-acef-azul900">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-titulos text-base font-bold text-acef-negro">
               {item.pregunta}
               <span
                 aria-hidden="true"

@@ -14,7 +14,7 @@ export const PREGUNTAS_FRECUENTES: PreguntaFrecuente[] = [
   {
     pregunta: "¿Cómo entrego mis documentos?",
     respuesta:
-      "Por el canal que le resulte más cómodo: WhatsApp, correo electrónico o la plataforma que estemos usando con usted. Le decimos exactamente qué necesitamos (facturas, extractos bancarios, soportes de nómina, entre otros) y cada cuánto lo necesitamos.",
+      "Por el canal que le resulte más cómodo: WhatsApp, correo electrónico o el medio que acordemos con usted. Le decimos exactamente qué necesitamos (facturas, extractos bancarios, soportes de nómina, entre otros) y cada cuánto lo necesitamos.",
   },
   {
     pregunta: "¿Trabajan con empresas fuera de Zipaquirá?",

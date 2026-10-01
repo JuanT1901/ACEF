@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ComentarioBorrador } from "@/components/ui/ComentarioBorrador";
-import { CIUDAD, CONTADORA_NOMBRE, EMAIL_CONTACTO, construirEnlaceWhatsApp } from "@/content/contacto";
-import { FECHA_ACTUALIZACION_POLITICAS, RESPONSABLE_IDENTIFICACION } from "@/content/legal";
+import { CIUDAD, EMAIL_CONTACTO, construirEnlaceWhatsApp } from "@/content/contacto";
+import { FECHA_ACTUALIZACION_POLITICAS, RESPONSABLE_TRATAMIENTO } from "@/content/legal";
 
 export const metadata: Metadata = {
   title: "Política de tratamiento de datos personales",
@@ -16,45 +16,41 @@ export default function TratamientoDeDatos() {
       <ComentarioBorrador />
 
       <p className="mb-2 text-sm font-bold uppercase tracking-wide text-acef-azul800">Legal</p>
-      <h1 className="font-titulos text-3xl font-extrabold text-acef-azul900">
+      <h1 className="font-titulos text-3xl font-extrabold text-acef-negro">
         Política de Tratamiento de Datos Personales
       </h1>
-      <p className="mt-2 text-sm text-acef-texto-secundario">
-        Conforme a la Ley 1581 de 2012 y el Decreto 1074 de 2015. Última actualización:{" "}
-        {FECHA_ACTUALIZACION_POLITICAS}
-      </p>
 
       <div className="mt-8 space-y-6 text-base leading-relaxed text-acef-texto">
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             1. Responsable del tratamiento
           </h2>
           <p className="mt-2">
-            {CONTADORA_NOMBRE}, Contadora Pública, con actividad en {CIUDAD}, Colombia (
-            {RESPONSABLE_IDENTIFICACION}), es la responsable del tratamiento de los datos
-            personales que se recolectan a través de este sitio web.
+            {RESPONSABLE_TRATAMIENTO}, con domicilio en {CIUDAD}, Colombia, actúa como
+            Responsable del Tratamiento de los datos personales que se recolectan a través
+            de este sitio web.
           </p>
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             2. Datos que se recolectan
           </h2>
           <p className="mt-2">
-            A través del formulario de contacto de este sitio se recolectan los siguientes datos,
-            entregados voluntariamente por el titular: nombre, nombre de la empresa (cuando
-            aplica), correo electrónico, teléfono, servicio de interés y el contenido del mensaje
-            enviado.
+            Cuando el titular se comunica con ACEF por WhatsApp o por correo electrónico, se
+            recolectan los datos que entrega voluntariamente en esa comunicación: nombre, número
+            de teléfono, correo electrónico (cuando aplica), nombre de la empresa (cuando aplica)
+            y el contenido de los mensajes enviados.
           </p>
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             3. Finalidad del tratamiento
           </h2>
           <p className="mt-2">Los datos recolectados se utilizan exclusivamente para:</p>
           <ul className="mt-2 list-disc space-y-1 pl-6">
-            <li>Responder las solicitudes de información enviadas a través del sitio.</li>
+            <li>Responder las solicitudes de información enviadas por WhatsApp o correo electrónico.</li>
             <li>
               Gestionar la relación contractual, si el titular decide contratar los servicios de
               ACEF.
@@ -70,7 +66,7 @@ export default function TratamientoDeDatos() {
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             4. Derechos del titular
           </h2>
           <p className="mt-2">
@@ -97,16 +93,13 @@ export default function TratamientoDeDatos() {
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             5. Canal de atención de consultas y reclamos
           </h2>
           <p className="mt-2">
             Para ejercer cualquiera de los derechos anteriores, o para presentar consultas y
-            reclamos sobre el tratamiento de sus datos personales, puede escribir a{" "}
-            <a href={`mailto:${EMAIL_CONTACTO}`} className="font-semibold text-acef-azul800 underline">
-              {EMAIL_CONTACTO}
-            </a>{" "}
-            o por{" "}
+            reclamos sobre el tratamiento de sus datos personales, el canal principal de
+            atención es{" "}
             <a
               href={construirEnlaceWhatsApp("Hola, quiero hacer una consulta sobre el tratamiento de mis datos personales")}
               target="_blank"
@@ -115,30 +108,37 @@ export default function TratamientoDeDatos() {
             >
               WhatsApp
             </a>
-            , indicando su solicitud de manera clara. La respuesta se dará dentro de los términos
-            que establece la ley para este tipo de solicitudes.
+            , indicando su solicitud de manera clara. También puede dirigirla al correo{" "}
+            <a href={`mailto:${EMAIL_CONTACTO}`} className="font-semibold text-acef-azul800 underline">
+              {EMAIL_CONTACTO}
+            </a>
+            . La respuesta se dará dentro de los términos que establece la ley para este tipo
+            de solicitudes.
           </p>
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             6. Autorización
           </h2>
           <p className="mt-2">
-            Al marcar la casilla de autorización en el formulario de contacto y enviar sus datos,
-            el titular manifiesta que ha leído esta política y autoriza de manera libre, expresa e
-            informada el tratamiento de sus datos personales para las finalidades aquí descritas.
+            Al escribir a ACEF por WhatsApp o por correo electrónico y entregar voluntariamente
+            sus datos, el titular autoriza, mediante esta conducta inequívoca, el tratamiento de
+            sus datos personales para las finalidades aquí descritas. Esta política está
+            publicada en el sitio web y puede solicitarse en cualquier momento por los mismos
+            canales.
           </p>
         </section>
 
         <section>
-          <h2 className="font-titulos text-xl font-bold text-acef-azul900">
+          <h2 className="font-titulos text-xl font-bold text-acef-negro">
             7. Vigencia
           </h2>
           <p className="mt-2">
-            Esta política rige desde la fecha de su última actualización, indicada al inicio de
-            este documento, y permanecerá vigente mientras exista una base de datos con
-            información personal sujeta a tratamiento por parte del responsable.
+            Esta política se expide conforme a la Ley 1581 de 2012 y el Decreto 1074 de 2015,
+            rige desde el {FECHA_ACTUALIZACION_POLITICAS} y permanecerá vigente mientras
+            exista una base de datos con información personal sujeta a tratamiento por parte
+            del responsable.
           </p>
         </section>
       </div>

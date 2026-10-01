@@ -20,12 +20,20 @@ export const TIKTOK_URL: string | null = null;
 export const EMAIL_CONTACTO = "contacto@PENDIENTE-definir-dominio.co";
 
 export const CIUDAD = "Zipaquirá";
-export const COBERTURA = "Atiende clientes en todo Colombia de forma remota";
+export const COBERTURA = "Atendemos a clientes en todo Colombia de forma remota";
 
-export const CONTADORA_NOMBRE = "Heidy Lilian Escárraga Florido";
-export const CONTADORA_CARGO = "Contadora Pública titulada";
+/**
+ * USO EXCLUSIVAMENTE LEGAL. La comunicación comercial del sitio habla de un
+ * equipo interdisciplinario, no de una persona; no usar estas constantes en
+ * textos de marketing.
+ *
+ * El nombre se conserva porque la Ley 1581 de 2012 (Habeas Data) obliga a
+ * identificar nominalmente al responsable del tratamiento de datos personales
+ * en la política de privacidad. Ver /tratamiento-de-datos.
+ */
+export const RESPONSABLE_LEGAL_NOMBRE = "Heidy Lilian Escárraga Florido";
+export const RESPONSABLE_LEGAL_CARGO = "Contadora Pública titulada";
 // PENDIENTE: número de tarjeta profesional (no se debe inventar, ver PENDIENTES.md)
-export const CONTADORA_TARJETA_PROFESIONAL = "T.P. [PENDIENTE]";
+export const RESPONSABLE_LEGAL_TARJETA_PROFESIONAL = "T.P. [PENDIENTE]";
 
-// PENDIENTE: confirmar horario real de atención (ver PENDIENTES.md)
-export const HORARIO_ATENCION = "Horario de atención: [PENDIENTE definir]";
+export const HORARIO_ATENCION = "Lunes a viernes, de 9:00 a. m. a 5:00 p. m.";
