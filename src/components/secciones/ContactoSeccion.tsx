@@ -1,8 +1,10 @@
 import { Seccion } from "@/components/ui/Seccion";
 import { IconoRedSocial } from "@/components/ui/IconoRedSocial";
 import { TarjetaWhatsApp } from "@/components/secciones/TarjetaWhatsApp";
+import { MapaUbicacion } from "@/components/secciones/MapaUbicacion";
 import {
   COBERTURA,
+  DIRECCION_COMPLETA,
   HORARIO_ATENCION,
   INSTAGRAM_URL,
   TIKTOK_URL,
@@ -24,6 +26,10 @@ export function ContactoSeccion() {
 
         <dl className="space-y-6">
           <div className="border-l-2 border-acef-amarillo pl-4">
+            <dt className="font-titulos font-bold text-acef-negro">Oficina</dt>
+            <dd className="mt-1 text-sm text-acef-texto-secundario">{DIRECCION_COMPLETA}</dd>
+          </div>
+          <div className="border-l-2 border-acef-amarillo pl-4">
             <dt className="font-titulos font-bold text-acef-negro">Cobertura</dt>
             <dd className="mt-1 text-sm text-acef-texto-secundario">
               {COBERTURA}.
@@ -44,6 +50,10 @@ export function ContactoSeccion() {
             </div>
           )}
         </dl>
+      </div>
+
+      <div className="mt-10">
+        <MapaUbicacion />
       </div>
     </Seccion>
   );

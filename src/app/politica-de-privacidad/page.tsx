@@ -39,7 +39,10 @@ export default function PoliticaDePrivacidad() {
           <p className="mt-2">
             Este sitio web no instala cookies de analítica ni de terceros, y no utiliza
             herramientas de rastreo publicitario. Por esa razón, no se muestra un banner de
-            cookies: no hay nada que autorizar. Si en el futuro se incorpora alguna herramienta de
+            cookies: no hay nada que autorizar. La única excepción es el mapa de ubicación de
+            Google Maps, que no se carga automáticamente: solo se activa si usted pulsa el botón
+            &quot;Ver mapa&quot;, y desde ese momento Google puede instalar sus propias cookies
+            conforme a su política de privacidad. Si en el futuro se incorpora alguna herramienta de
             este tipo, esta política se actualizará y se implementará el aviso correspondiente
             antes de activarla.
           </p>

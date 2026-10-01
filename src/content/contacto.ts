@@ -22,6 +22,15 @@ export const EMAIL_CONTACTO = "contacto@PENDIENTE-definir-dominio.co";
 export const CIUDAD = "Zipaquirá";
 export const COBERTURA = "Atendemos a clientes en todo Colombia de forma remota";
 
+export const DIRECCION = "Diagonal 13 # 21-68";
+export const DIRECCION_COMPLETA = `${DIRECCION}, ${CIUDAD}, Cundinamarca`;
+
+const consultaMapa = encodeURIComponent(`${DIRECCION_COMPLETA}, Colombia`);
+/** Mapa incrustable de Google (no requiere API key). */
+export const MAPA_EMBED_URL = `https://www.google.com/maps?q=${consultaMapa}&output=embed`;
+/** Abre la ubicación en Google Maps (app o web). */
+export const MAPA_ENLACE_URL = `https://www.google.com/maps/search/?api=1&query=${consultaMapa}`;
+
 /**
  * USO EXCLUSIVAMENTE LEGAL. La comunicación comercial del sitio habla de un
  * equipo interdisciplinario, no de una persona; no usar estas constantes en

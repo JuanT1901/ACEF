@@ -27,8 +27,10 @@ valores; donde falta un dato real, el sitio muestra un placeholder visible.
   2. **NIT o C.C. real** (`RESPONSABLE_IDENTIFICACION`), hoy `NIT/C.C. [PENDIENTE]`.
 
   **No publicar el sitio sin resolver ambas.**
-- **Dirección física**: no se incluyó en ninguna parte del sitio porque no se proporcionó.
-  Si se desea publicarla, indicarla y se agrega.
+- **Ubicación en el mapa.** La dirección (Diagonal 13 # 21-68, Zipaquirá) se busca en Google
+  Maps como texto (`src/content/contacto.ts`). **Verificar que el pin caiga en la oficina
+  correcta**; si no, reemplazar `MAPA_EMBED_URL` por el enlace de "Insertar un mapa" que da
+  Google Maps desde la ficha exacta del lugar.
 
 ## Redes sociales
 

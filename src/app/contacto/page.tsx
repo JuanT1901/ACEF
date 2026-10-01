@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { TarjetaWhatsApp } from "@/components/secciones/TarjetaWhatsApp";
+import { MapaUbicacion } from "@/components/secciones/MapaUbicacion";
 import { IconoRedSocial } from "@/components/ui/IconoRedSocial";
 import {
   COBERTURA,
+  DIRECCION_COMPLETA,
   EMAIL_CONTACTO,
   HORARIO_ATENCION,
   INSTAGRAM_URL,
@@ -33,6 +35,10 @@ export default function Contacto() {
         <div>
           <dl className="space-y-6">
             <div className="border-l-2 border-acef-amarillo pl-4">
+              <dt className="font-titulos font-bold text-acef-negro">Oficina</dt>
+              <dd className="mt-1 text-sm text-acef-texto-secundario">{DIRECCION_COMPLETA}</dd>
+            </div>
+            <div className="border-l-2 border-acef-amarillo pl-4">
               <dt className="font-titulos font-bold text-acef-negro">Cobertura</dt>
               <dd className="mt-1 text-sm text-acef-texto-secundario">
                 {COBERTURA}.
@@ -58,6 +64,10 @@ export default function Contacto() {
             <IconoRedSocial red="tiktok" url={TIKTOK_URL} />
           </div>
         </div>
+      </div>
+
+      <div className="mt-10">
+        <MapaUbicacion />
       </div>
     </div>
   );
